@@ -23,6 +23,67 @@
             android:textSize="15sp"/>
 
     </LinearLayout>
+    <LinearLayout
+        android:id="@+id/main_center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/main_center_bg">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="15dp"
+            android:background="@drawable/recycler_bg"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:gravity="top|center"
+        android:background="@color/cyan_l">
+        <FrameLayout
+            android:id="@+id/cartFrame"
+            android:layout_marginHorizontal="5dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/main_button_bg">
+            <ImageButton android:id="@+id/cartButon" style="@style/main_buttons" android:layout_gravity="center" android:background="@drawable/button_cart"/>
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/candyFrame"
+            android:layout_marginHorizontal="5dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/main_button_bg">
+            <ImageButton android:id="@+id/candyButon" style="@style/main_buttons" android:layout_gravity="center" android:background="@drawable/button_cart"/>
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/drinksFrame"
+            android:layout_marginHorizontal="5dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/main_button_bg">
+            <ImageButton android:id="@+id/drinksButon" style="@style/main_buttons" android:layout_gravity="center" android:background="@drawable/button_cart"/>
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/snacksFrame"
+            android:layout_marginHorizontal="5dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/main_button_bg">
+            <ImageButton android:id="@+id/snacksButon" style="@style/main_buttons" android:layout_gravity="center" android:background="@drawable/button_cart"/>
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
 
 
 </LinearLayout>
